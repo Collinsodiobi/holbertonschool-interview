@@ -1,3 +1,3 @@
-# Lockboxes
+# Rotate 2D Matrix
 
-This project determines if all boxes can be opened using available keys.
+Rotate an n x n 2D matrix 90 degrees clockwise in-place.
