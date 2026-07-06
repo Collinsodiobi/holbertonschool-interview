@@ -1,3 +1,3 @@
-# Rotate 2D Matrix
+# Making Change
 
-Rotate an n x n 2D matrix 90 degrees clockwise in-place.
+Determine the fewest number of coins needed to meet a given total.
