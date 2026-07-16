@@ -12,10 +12,13 @@ def isWinner(x, nums):
     Returns:
         Name of the player that won the most rounds, or None
     """
-    if not nums or x == 0:
+    if not nums or x <= 0:
         return None
 
     max_n = max(nums)
+
+    if max_n < 1:
+        return None
 
     # Sieve of Eratosthenes
     sieve = [True] * (max_n + 1)
@@ -34,7 +37,9 @@ def isWinner(x, nums):
     ben_wins = 0
 
     for n in nums:
-        # If odd number of primes, Maria wins; if even, Ben wins
+        if n < 1:
+            ben_wins += 1
+            continue
         if prime_count[n] % 2 == 1:
             maria_wins += 1
         else:
